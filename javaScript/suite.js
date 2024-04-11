@@ -4,6 +4,7 @@ document.onreadystatechange = function () {
     if (document.readyState == 'interactive') {
         console.log("c'est ok")
         console.log(location.search)
+
         const queryString = window.location.search;
         const urlParams = new URLSearchParams(queryString);
         const login = urlParams.get('login');
